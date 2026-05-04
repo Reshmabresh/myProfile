@@ -1,27 +1,38 @@
-
 const skillsData = [
   {
-    id: 1,
-    name: "ReactJS",
-    shortLabel: "R",
-    description: "Advanced Hooks, component-based UI, and state management."
+    name: "React JS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    description: "Advanced hooks, component-based UI, state management.",
+    category: "Frontend"
   },
   {
-    id: 2,
     name: "Tailwind CSS",
-    shortLabel: "T",
-    description: "Responsive layouts, utility-first styling, and clean UI building."
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    description: "Responsive layouts and clean UI.",
+    category: "Frontend"
   },
   {
-    id: 3,
     name: "JavaScript",
-    shortLabel: "J",
-    description: "DOM manipulation, events, validation, Fetch API, and storage."
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    description: "DOM, events, APIs, validation.",
+    category: "Frontend"
   },
   {
-    id: 4,
     name: "MongoDB",
-    shortLabel: "M",
-    description: "Document-based database design and backend integration."
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    description: "Document database integration.",
+    category: "Backend"
+  },
+  {
+    name: "Express JS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    description: "REST APIs and middleware.",
+    category: "Backend"
+  },
+  {
+    name: "Node JS",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    description: "Server-side JavaScript runtime.",
+    category: "Backend"
   }
 ];
