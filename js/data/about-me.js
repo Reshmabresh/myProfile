@@ -1,0 +1,1 @@
+const aboutMeData = "Hi, I’m a Computer Science student and MERN stack developer focused on building responsive frontends and scalable backend APIs.Passionate about learning, problem solving, and developing real-world software solutions.I’m continuously learning and looking for opportunities to work as a full-stack developer.";
