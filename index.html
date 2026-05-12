@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reshma B — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/custom.css">
+</head>
+
+<body>
+
+<!-- SCROLL PROGRESS -->
+<div id="progress-bar"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <a href="#hero" class="nav-logo">RB</a>
+  <ul class="nav-links">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Education</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#skills">Skills</a></li>
+  </ul>
+  <button id="theme-toggle">Light</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-content">
+    <span class="hero-label">Full Stack Developer · MERN · Mysuru</span>
+    <h1 class="hero-name">Reshma<br><em>B</em></h1>
+    <p class="hero-tagline">I am a <span id="typing-text"></span><span class="cursor">|</span></p>
+    <p id="greeting" class="hero-greeting"></p>
+    <p class="hero-desc">
+      Computer Science student at CIT Mandya, building full-stack web applications
+      and solving complex problems through code.
+    </p>
+    <div class="hero-cta">
+      <button onclick="initGeolocation()" class="btn-primary">
+        📍 Detect Location
+      </button>
+      <a href="https://github.com/Reshmabresh/MERN_Stu_FebMay26Mys" target="_blank" class="btn-ghost">GitHub →</a>
+      <a href="https://www.linkedin.com/in/reshma-reshma-b-79b240386" target="_blank" class="btn-ghost">LinkedIn →</a>
+    </div>
+    <p id="message" class="location-msg"></p>
+  </div>
+
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-frame">
+      <img src="my photo.jpeg" alt="Reshma B">
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="project-controls">
+    <input id="project-search" type="text" placeholder="Search projects…">
+    <div id="project-filters"></div>
+    <span id="project-count"></span>
+  </div>
+
+  <div id="projects-container"></div>
+</section>
+
+<!-- EDUCATION -->
+<section id="experience">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Education</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="edu-grid">
+    <div class="edu-card">
+      <p class="edu-year">2022 — 2026</p>
+      <h3 class="edu-degree">B.E Computer Science</h3>
+      <p class="edu-inst">CIT Mandya</p>
+      <span class="edu-grade">CGPA 8.0</span>
+      <div class="edu-icon-bg">🎓</div>
+    </div>
+    <div class="edu-card">
+      <p class="edu-year">2020 — 2022</p>
+      <h3 class="edu-degree">PUC — PCMB</h3>
+      <p class="edu-inst">Global Mahesh PU College</p>
+      <span class="edu-grade">63.%</span>
+      <div class="edu-icon-bg">📘</div>
+    </div>
+    <div class="edu-card">
+      <p class="edu-year">2020</p>
+      <h3 class="edu-degree">SSLC</h3>
+      <p class="edu-inst">Governament High School</p>
+      <span class="edu-grade">80%</span>
+      <div class="edu-icon-bg">🏫</div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Certificates</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div class="cert-list">
+    <div class="cert-item">
+      <div>
+        <p class="cert-title">Data Science Workshop</p>
+        <p class="cert-issuer">Raaya Infotech Solutions</p>
+      </div>
+      <span class="cert-year">2024</span>
+    </div>
+    <div class="cert-item">
+      <div>
+        <p class="cert-title">JavaScript Course</p>
+        <p class="cert-issuer">ABC Academy</p>
+      </div>
+      <span class="cert-year">2026</span>
+    </div>
+    <div class="cert-item">
+      <div>
+        <p class="cert-title">Data Science with AI &amp; ML Workshop</p>
+        <p class="cert-issuer">Cranes Varsity</p>
+      </div>
+      <span class="cert-year">2024</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+
+  <div id="skills-filters"></div>
+  <div id="skills-container"></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p class="footer-name"> Reshma &copy; 2026</p>
+  <div class="footer-links">
+    <a href="https://github.com/Reshmabresh/MERN_Stu_FebMay26Mys" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/reshma-reshma-b-79b240386" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="backToTop" class="hidden" aria-label="Back to top">↑</button>
+
+<!-- CONTACT BUTTON -->
+<button id="modal-trigger" aria-label="Contact me">✉</button>
+
+<!-- CONTACT MODAL -->
+<div id="contact-modal" class="hidden">
+  <div id="modal-content">
+    <button id="modal-close">&times;</button>
+    <h3 class="modal-title">Get in touch</h3>
+    <p class="modal-sub">Let's build something together.</p>
+    <form id="contact-form">
+      <div class="form-field">
+        <label>Name</label>
+        <input id="contact-name" type="text" placeholder="Your name">
+      </div>
+      <div class="form-field">
+        <label>Email</label>
+        <input id="contact-email" type="email" placeholder="your@email.com">
+      </div>
+      <p id="form-message"></p>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+<!-- JS DATA -->
+<script src="js/data/projects.js"></script>
+<script src="js/data/skills.js"></script>
+
+<!-- JS FEATURES -->
+<script src="js/features/greeting.js"></script>
+<script src="js/features/typing-animation.js"></script>
+<script src="js/features/geolocation.js"></script>
+<script src="js/features/project-filter.js"></script>
+<script src="js/features/project-render.js"></script>
+<script src="js/features/project-search.js"></script>
+<script src="js/features/skills-render.js"></script>
+<script src="js/features/theme-toggle.js"></script>
+<script src="js/features/modal.js"></script>
+<script src="js/features/contact-validation.js"></script>
+<script src="js/features/BackToTop.js"></script>
+<script src="js/features/Scroll-Progress.js"></script>
+<script src="js/features/Scroll-spy.js"></script>
+<script src="js/main.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="js/email.js"></script>
+</body>
+</html>
